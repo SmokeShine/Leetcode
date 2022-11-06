@@ -27,15 +27,15 @@ class Solution:
         image[sr][sc]=self.color
         #up
         self.dfs(image,sr-1,sc,target)
-        self.dict_[(sr-1,sc)]=1
+        #self.dict_[(sr-1,sc)]=1
         #down
         self.dfs(image,sr+1,sc,target)
-        self.dict_[(sr+1,sc)]=1
+        #self.dict_[(sr+1,sc)]=1
         #left
         self.dfs(image,sr,sc-1,target)
-        self.dict_[(sr,sc-1)]=1
+        #self.dict_[(sr,sc-1)]=1
         #right
         self.dfs(image,sr,sc+1,target)
-        self.dict_[(sr,sc+1)]=1
+        #self.dict_[(sr,sc+1)]=1
         
         

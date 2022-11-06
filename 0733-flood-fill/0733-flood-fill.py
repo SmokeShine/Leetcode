@@ -15,14 +15,15 @@ class Solution:
     def dfs(self,image,sr,sc,target):
         if (sr,sc) in self.dict_:
             return
+        self.dict_[(sr,sc)]=1
         if sr > self.r or sr < 0:
-            self.dict_[(sr,sc)]=1
+            # self.dict_[(sr,sc)]=1
             return
         if sc > self.c or sc < 0:
-            self.dict_[(sr,sc)]=1
+            # self.dict_[(sr,sc)]=1
             return
         if image[sr][sc]!=target:
-            self.dict_[(sr,sc)]=1
+            # self.dict_[(sr,sc)]=1
             return
         image[sr][sc]=self.color
         #up

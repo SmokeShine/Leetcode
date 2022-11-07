@@ -8,5 +8,5 @@ class Solution:
         T[0]=nums[0]
         for i in range(1,len(nums)):
             T[i]=max(nums[i],T[i-1]+nums[i])
-        print(T)
+        # print(T)
         return max(T)

@@ -3,8 +3,8 @@ class Solution:
         if not cost:
             return 0
         
-        # if len(cost)<=2:
-        #     return 0
+        if len(cost)<2:
+            return 0
         T=[0]*(len(cost)+1)
         T[0]=0
         T[1]=0

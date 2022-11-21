@@ -8,6 +8,6 @@ class Solution:
             diff_=(nums[i]+nums[-i-1])/2
             print(diff_)
             answer[diff_]=answer.get(diff_,0)+1
-        print(nums)
-        print(answer)
+        # print(nums)
+        # print(answer)
         return len(answer)

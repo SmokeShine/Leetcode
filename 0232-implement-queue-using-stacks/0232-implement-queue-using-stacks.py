@@ -12,7 +12,6 @@ class MyQueue:
             self.stack2.append(x)
 
     def pop(self) -> int:
-        print(self.stack1,self.stack2)
         if not self.stack1:
             #use stack2
             temp=self.stack2[0]

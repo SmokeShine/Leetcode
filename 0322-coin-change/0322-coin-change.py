@@ -9,12 +9,7 @@ class Solution:
         for i in range(rows+1):
             T[i][0]=0
             
-        # for j in range(1,amount+1):
-        #     T[0][j]=0
-            
-        
-        for i in range(1,rows+1):
-            
+        for i in range(1,rows+1):            
             for j in range(1,amount+1):            
                 min_=T[i-1][j]
                 if j>=coins[i-1]:

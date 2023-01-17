@@ -8,7 +8,6 @@ class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         if not root:
             return []
-        self.answer=[]
         return self.dfs(root)
 
     def dfs(self,root):
